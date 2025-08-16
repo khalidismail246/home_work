@@ -1,0 +1,7 @@
+var ==> key word and select data type 
+dynamic ==> data type and Receives all data ( string , int ,double ,..ect ),Use if you don't know the data type
+ int ==> data type ,integer
+ double==> data type , fractional number
+ bool ==> data type , select true or false
+ string ==> data type , enter text 
+ num ==> data type , use if you don't know integar numbers or fractional numbers
