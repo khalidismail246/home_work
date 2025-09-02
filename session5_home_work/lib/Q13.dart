@@ -5,5 +5,9 @@ void main() {
   for (var item in names) {
     duplicate[item] = (duplicate[item] ?? 0) + 1;
   }
-  print(duplicate);
+  duplicate.forEach((key, value) {
+    if (value > 1) {
+      print(key);
+    }
+  });
 }
