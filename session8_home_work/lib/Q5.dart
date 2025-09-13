@@ -2,14 +2,14 @@
 import 'dart:io';
 
 void main() {
-  List numbers = [];
+  List numbers = [1, 2, 3, 4, 5];
   int largest = 0;
   int secondLargest = 0;
-  for (int i = 1; i <= 6; i++) {
-    print("enter number $i");
-    int num = int.parse(stdin.readLineSync()!);
-    numbers.add(num);
-  }
+  // for (int i = 1; i <= 6; i++) {
+  //   print("enter number $i");
+  //   int num = int.parse(stdin.readLineSync()!);
+  //   numbers.add(num);
+  // }
   for (int i = 0; i < numbers.length; i++) {
     if (numbers[i] > largest) {
       secondLargest = largest;
