@@ -1,3 +1,8 @@
+void main() {
+  print(isAnagram("anagram", "nagaram"));
+  print(isAnagram("rat", "cat"));
+}
+
 bool isAnagram(String s, String t) {
   var sSplit = s.split("");
   var tSplit = t.split("");
