@@ -1,13 +1,12 @@
-import 'package:application/pages/home_page.dart';
-
+import 'package:app/pages/home_page.dart';
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(BmiCalculateApp());
+  runApp(MyTasksApp());
 }
 
-class BmiCalculateApp extends StatelessWidget {
-  const BmiCalculateApp({super.key});
+class MyTasksApp extends StatelessWidget {
+  const MyTasksApp({super.key});
 
   @override
   Widget build(BuildContext context) {
