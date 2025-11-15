@@ -1,4 +1,4 @@
-import 'package:app/pages/start_page.dart';
+import 'package:app/pages/start_pages.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -10,6 +10,6 @@ class QuizApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(debugShowCheckedModeBanner: false, home: StartPage());
+    return MaterialApp(debugShowCheckedModeBanner: false, home: StartPages());
   }
 }

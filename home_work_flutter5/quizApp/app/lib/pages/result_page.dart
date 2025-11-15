@@ -1,13 +1,12 @@
-import 'package:app/const/const_background_color.dart';
-import 'package:app/models/Question_manger.dart';
-import 'package:app/pages/start_page.dart';
-import 'package:app/widgets/widget_result_page/custom_result_container.dart';
+import 'package:app/models/question_manger.dart';
+import 'package:app/pages/start_pages.dart';
+import 'package:app/theme/app_decoration.dart';
+import 'package:app/widgets/result_page_widgets.dart/custom_result_container.dart';
 import 'package:flutter/material.dart';
 
 class ResultPage extends StatelessWidget {
   const ResultPage({super.key, required this.questionManger});
   final QuestionManger questionManger;
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -18,16 +17,19 @@ class ResultPage extends StatelessWidget {
           style: TextStyle(fontWeight: FontWeight.bold, color: Colors.white),
         ),
       ),
-      body: ConstBackgroundColor(
+      body: Container(
+        width: double.infinity,
+        height: double.infinity,
+        decoration: AppDecoration.mainBackgroundDecoration,
         child: Column(
           spacing: 10,
           children: [
             Expanded(
               child: ListView.builder(
-                itemCount: questionManger.question.length,
+                itemCount: questionManger.questions.length,
                 itemBuilder: (context, index) {
                   return CustomResultContainer(
-                    questionModel: questionManger.question[index],
+                    questionModel: questionManger.questions[index],
                   );
                 },
               ),
@@ -38,7 +40,7 @@ class ResultPage extends StatelessWidget {
                   context,
                   MaterialPageRoute(
                     builder: (context) {
-                      return StartPage();
+                      return StartPages();
                     },
                   ),
                 );

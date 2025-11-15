@@ -1,19 +1,17 @@
 class QuestionModel {
   final String image;
-  final String text;
   final int numberQuestion;
-  final List<String> chooses;
-  final List<String> answer;
-  final List<bool> select;
-  final bool isOnechoose;
+  final String question;
+  final List<String> choices;
+  final bool oneChoice;
+  final Set<String> answer;
 
   QuestionModel({
-    required this.numberQuestion,
     required this.image,
-    required this.text,
-    required this.chooses,
+    required this.numberQuestion,
+    required this.question,
+    required this.choices,
+    required this.oneChoice,
     required this.answer,
-    required this.isOnechoose,
-    required this.select,
   });
 }
